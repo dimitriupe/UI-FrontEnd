@@ -1,0 +1,31 @@
+// Mixins in here
+
+.display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn-custom(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.btn-padding-border {
+    padding: 15px 25px 15px 25px;
+    border-radius: 15px;
+}
+
+.btn-font-color {
+    color: @white;
+}
+
+.btn-font-size {
+    font-size: 17px;
+}
+
+.btn-font-weight {
+    font-weight: bold;
+}

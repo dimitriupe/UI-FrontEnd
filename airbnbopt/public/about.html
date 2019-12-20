@@ -1,43 +1,164 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+  <meta charset="utf-8">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <title>About our team</title>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <header>
+    <div class="title">
+      <h1>React App Title</h1>
+    </div>
+    <nav class="nav">
+      <a href="/index.html">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">React App</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+     
+  <div class="container home">
+    <section class="top-section">
+        <h2>Meet our wonderful team!</h2>
+        <p>Over the past two weeks our team worked hard to create React App!<br>Click <a href="#">here</a> to download it!!<br> With our app you will find the best places to stay in Los Angeles, at the best available prices!!</p>
+    </section>
+
+    <section class="team-members">
+      <div class="text-content">
+        <h2>Mali</h2>
+        <h2>Mohamad Ali Nasser</h2>
+        <p>Project Manager - Data Engineer</p>
+      </div>
+      <div class="img-content">
+        <img src="pics/Mali.jpg" alt="Mali's profile picture">
+      </div>
+    </section>
+    <section class="team-members inverse-content">
+      <div class="img-content">
+          <img src="pics/Alessandra.jpg" class="img-fluid rounded" alt="Alessandra's profile picture">
+      </div>
+      <div class="text-content">
+        <h2>Alessandra Longaretti</h2>
+        <p>Web React I</p> 
+      </div>
+    </section>
+
+    <section class="team-members">
+      <div class="text-content">
+        <h2>Cory Murray</h2>
+        <p>Web React II</p>
+      </div>
+      <div class="img-content">
+        <img src="pics/Cory.png" alt="Cory's profile picture">
+      </div>
+    </section>
+    <section class="team-members inverse-content">
+      <div class="img-content">
+          <img src="pics/DJ.jpg" class="img-fluid rounded" alt="DJ's profile picture">
+      </div>
+      <div class="text-content">
+        <h2>DJ</h2>
+        <h2>Donald Coleman</h2>
+        <p>Back End Developer</p> 
+      </div>
+    </section>
+
+    <section class="team-members">
+      <div class="text-content">
+        <h2>Jared Brown</h2>
+        <p>Web React I</p>
+      </div>
+      <div class="img-content">
+        <img src="pics/Jared.png" alt="Jared's profile picture">
+      </div>
+    </section>
+    <section class="team-members inverse-content">
+      <div class="img-content">
+          <img src="pics/Jerimiah.png" class="img-fluid rounded" alt="Jerimiah's profile picture">
+      </div>
+      <div class="text-content">
+        <h2>Jerimiah Willhite</h2>
+        <p>Data Engineer</p> 
+      </div>
+    </section>
+    
+    <section class="team-members">
+      <div class="text-content">
+        <h2>Jonathan Mendoza</h2>
+        <p>Data Engineer</p>
+      </div>
+      <div class="img-content">
+        <img src="pics/Jonathan.jpg" alt="Jonathan's profile picture">
+      </div>
+    </section>
+    <section class="team-members inverse-content">
+      <div class="img-content">
+          <img src="pics/petros.jpg" class="img-fluid rounded" alt="Petro's profile picture">
+      </div>
+      <div class="text-content">
+        <h2>Petros Demetriou</h2>
+        <p>Web UI Developer</p> 
+      </div>
+    </section>
+
+    <section class="team-members">
+      <div class="text-content">
+        <h2>Raul Harrington Jr.</h2>
+        <p>Machine Learning Engineer</p>
+      </div>
+      <div class="img-content">
+        <img src="pics/Raul.jpg" alt="Raul's profile picture">
+      </div>
+    </section>
+    <section class="team-members inverse-content">
+      <div class="img-content">
+          <img src="pics/Robinson.jpg" class="img-fluid rounded" alt="Robinson's profile picture">
+      </div>
+      <div class="text-content">
+        <h2>Robinson Valencia</h2>
+        <p>Web UI Developer</p> 
+      </div>
+    </section>
+
+    <section class="content-destination">
+      <h2>Pick Your Destination</h2>
+      <p>Expedition excursion design darn excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
+      <img src="img/destination.jpg" alt="Second slide">
+    </section>
+    
+    <section class="content-pick">
+      <div class="destination">
+        <h4>Fun In The Sun</h4>
+        <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
+        <div class="btn">Sign Me Up!</div>
+      </div>
+      <div class="destination">
+        <h4>Mountain Excursion</h4>
+        <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
+        <div class="btn">Sign Me Up!</div>
+      </div>
+      <div class="destination">
+        <h4>Island Getaway</h4>
+        <p>Expedition excursion design excursion fun, clean simple organized WordPress Travel colorful webdesign. Traveler blogger website design expedition clean excursion traveling.</p>
+        <div class="btn">Sign Me Up!</div>
+      </div>
+    </section>
+  </div><!-- container -->
+
+  <footer class="footer">
+    <p>© React App 2019. All rights reserved.</p> 
+  </footer>
+
+</body>
 </html>

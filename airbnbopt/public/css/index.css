@@ -1,0 +1,376 @@
+/* Variables and Mixins */
+.display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .btn-padding-border {
+    padding: 15px 25px 15px 25px;
+    border-radius: 15px;
+  }
+  .btn-font-color {
+    color: #242323;
+  }
+  .btn-font-size {
+    font-size: 17px;
+  }
+  .btn-font-weight {
+    font-weight: bold;
+  }
+  /* General Styles */
+  /* http://meyerweb.com/eric/tools/css/reset/ 
+     v2.0 | 20110126
+     License: none (public domain)
+  */
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol,
+  ul {
+    list-style: none;
+  }
+  blockquote,
+  q {
+    quotes: none;
+  }
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  html,
+  body {
+    font-family: 'Bungee Inline', cursive;
+  }
+  h1 {
+    font-family: 'Bungee Inline', cursive;
+  }
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3.2rem;
+    padding-bottom: 10px;
+  }
+  h4 {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+  }
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    padding-bottom: 10px;
+  }
+  img {
+    max-width: 75%;
+    height: auto;
+  }
+  .container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  /* Components */
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px dashed silver;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #62dafc;
+  }
+  header a {
+    text-decoration: none;
+    color: #212529;
+    font-size: 1.6rem;
+    padding: 20px;
+  }
+  @media (max-width: 500px) {
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+    }
+    header .title {
+      padding: 10px 25px 10px 25px;
+    }
+    header .nav {
+      padding-top: 10px;
+      margin-bottom: -20px;
+    }
+    header a {
+      justify-content: center;
+      margin-right: 14px;
+      margin-left: 14px;
+    }
+  }
+  .footer {
+    width: 100%;
+    border-top: 2px dashed silver;
+    background: #62dafc;
+  }
+  .footer p {
+    text-align: center;
+    color: #212529;
+    font-size: 1.6rem;
+    padding: 20px;
+  }
+  .home .top-section {
+    border-bottom: 2px dashed #C0C0C0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .home .team-members {
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .home .team-members .text-content {
+    width: 48%;
+    padding-right: 1%;
+  }
+  .home .team-members .img-content {
+    width: 48%;
+    padding-left: 1%;
+  }
+  .home .team-members .img-content img {
+    border-radius: 10px;
+  }
+  .home .inverse-content {
+    padding-bottom: 30px;
+    border-bottom: 2px dashed #C0C0C0;
+  }
+  .home .inverse-content .text-content {
+    padding-left: 1%;
+    padding-right: 0;
+  }
+  .home .inverse-content .img-content {
+    padding-right: 1%;
+    padding-left: 0;
+  }
+  .home .content-destination {
+    width: 75%;
+    margin: 0 auto 30px;
+  }
+  .home .content-destination img {
+    border-radius: 10px;
+  }
+  .home .content-pick {
+    padding-top: 30px;
+    border-top: 2px dashed #C0C0C0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .home .content-pick .destination {
+    width: 30%;
+    margin-bottom: 30px;
+  }
+  .home .content-pick .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #62dafc;
+    width: 80%;
+    padding: 15px 25px 15px 25px;
+    border-radius: 15px;
+    color: #242323;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  @media (max-width: 500px) {
+    .team-members {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      height: auto;
+    }
+    .team-members .text-content h2 {
+      max-width: 490px;
+      height: auto;
+      text-align: left;
+      margin-left: 0%;
+    }
+    .team-members .text-content p {
+      width: 490px;
+      height: auto;
+      text-align: left;
+      margin-left: 0%;
+    }
+    .team-members img {
+      justify-self: center;
+      max-width: 490px;
+      height: auto;
+      transform: scale(1.2, 1.1);
+      margin-left: 17%;
+      margin-top: 10px;
+    }
+    .inverse-content {
+      flex-direction: column-reverse;
+    }
+    .inverse-content img {
+      margin-left: 19%;
+    }
+    .content-destination {
+      width: 480px;
+      height: auto;
+    }
+    .content-destination h2 {
+      width: 480px;
+      height: auto;
+      margin-left: -15%;
+    }
+    .content-destination p {
+      width: 480px;
+      height: auto;
+      margin-left: -15%;
+      padding-bottom: 20px;
+    }
+    .content-destination img {
+      transform: scale(1.3, 1.2);
+    }
+    .content-pick {
+      flex-direction: column;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 480px;
+    }
+    .content-pick .destination {
+      width: 380px;
+      margin-left: 11%;
+    }
+    .content-pick .destination h4,
+    .content-pick .destination p,
+    .content-pick .destination .btn {
+      width: 380px;
+    }
+  }
+  
