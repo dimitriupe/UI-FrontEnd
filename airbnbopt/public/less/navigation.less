@@ -1,0 +1,44 @@
+// Navigation Styles here
+
+header {
+    .display();
+    width: 100%;
+    border-bottom: 2px dashed silver;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    a {
+        text-decoration: none;
+        color: @font-color;
+        font-size: 1.6rem;
+        padding: @padding;
+    }
+}
+
+@media @mobile {
+    header { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        
+        .title {
+            padding: 10px 25px 10px 25px;
+        }
+
+        .nav {
+            padding-top: 10px;
+            margin-bottom: -20px;
+        }
+
+        a {
+            justify-content: center;
+            margin-right: 14px;
+            margin-left: 14px;
+        }
+
+   }
+   
+}
+
