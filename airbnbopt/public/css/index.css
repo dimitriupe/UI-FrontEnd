@@ -227,7 +227,7 @@ header a {
   transition: 0.3s ease-in-out;
 }
 header a:hover {
-  color: #62dafc;
+  color: #FD5C63;
   text-decoration: underline;
 }
 
@@ -372,7 +372,7 @@ body .home .firstpic img {
   display: flex;
   justify-content: center;
   align-self: center;
-  background-color: #62dafc;
+  background-color: #FD5C63;
   width: 50%;
   padding: 25px 25px 25px 25px;
   margin-bottom: 30px;
@@ -385,6 +385,7 @@ body .home .firstpic img {
 .home .content-end .btn:hover {
   transform: scale(1.1);
   transition: 0.5s ease-in-out;
+  background-color: #FEBDC0;
 }
 /* End of About Us page styling */
 
@@ -606,9 +607,6 @@ body .download img {
   .whatweoffer p {
     text-align: center;
   }
-  .content-end .btn {
-    margin-top: -10%;
-  }
   /* End of Home page responsiveness */
 
   /* Beginning of About page responsiveness */
@@ -695,9 +693,6 @@ body .download img {
   }
   .whatweoffer p {
     text-align: center;
-  }
-  .content-end .btn {
-    margin-top: -10%;
   }
   /* End of Home page responsiveness */
 
